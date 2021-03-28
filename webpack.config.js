@@ -17,32 +17,57 @@ module.exports = {
     mode: "development",
     module: {
         rules: [{
-                test: /\.html$/,
-                use: [{
-                    loader: 'html-loader',
+            test: /\.html$/,
+            use: [{
+                loader: 'html-loader',
+                options: {
+                    minimize: true,
+                }
+            }]
+        },
+        {
+            test: /\.css$/,
+            use: [
+                // 'style-loader',
+                {
+                    loader: MiniCssExtractPlugin.loader,
                     options: {
-                        minimize: true,
-                    }
-                }]
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    // 'style-loader',
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ]
-            },
-            {
-                test: /\.(png|svg|jpe?g|gif)$/,
-                use: [{
+                        publicPath: '../',
+                    },
+                },
+                'css-loader'
+            ]
+        },
+        {
+            test: /\.(png|svg|jpe?g|gif)$/,
+            use: [
+                {
                     loader: "file-loader",
                     options: {
-                        name: "[name].[ext]",
+                        name: '[name].[ext]',
                         outputPath: "imgs",
                     }
-                }]
-            },
+                }
+            ]
+        },
+        {
+            test: /\.(svg|eot|woff|woff2|ttf)$/,
+            use: [{
+                loader: "file-loader",
+                options: {
+                    name: "[name].[ext]",
+                    outputPath: "fonts",
+                    esModule: false,
+                }
+            }]
+        },
+        {
+            test:require.resolve('jquery'),
+            loader: 'expose-loader',
+            options: {
+                exposes: ['$','jQuery'],
+            }
+        },
         ]
     },
     plugins: [
@@ -58,7 +83,7 @@ module.exports = {
 
     devServer: {
         contentBase: path.join(__dirname, "./dist"),
-        port: 80,
+        port: 8080,
         writeToDisk: true,
     },
 };

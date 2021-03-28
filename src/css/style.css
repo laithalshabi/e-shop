@@ -1,4 +1,221 @@
+@font-face {
+    font-family: 'JF Flat Regular';
+    src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?#iefix) format('embedded-opentype'), url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'), url(../fonts/JF-Flat-regular.woff) format('woff'), url(../fonts/JF-Flat-regular.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+body {
+    font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: black;
+    line-height: 1.429;
+}
+
 h1 {
     color: red;
     text-align: center;
+}
+
+.custom-navbar {
+    border-bottom: 3px solid #EEF0EA;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.custom-navbar .container {
+    padding: 0;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
+.nav-item a {
+    color: #555;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.search-btn {
+    color: #949494;
+    border-radius: 0%;
+    background-color: transparent;
+    border: 1px solid #9b8b8b;
+}
+
+.search-btn:hover, .search-btn:focus, .search-btn:active, .search-btn:active:focus, .search-btn:active:hover {
+    color: goldenrod !important;
+    background-color: #d4d4d4 !important;
+    border-color: #9b8b8b !important;
+}
+
+.submit-search-btn {
+    color: white;
+    background-color: #FF3956;
+    font-weight: 700;
+    border-radius: 0%;
+    padding: 5px 15px 7px 15px;
+}
+
+.submit-search-btn:hover {
+    color: white;
+    background-color: #e0314b;
+}
+
+.search-bar {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-color: #9b8b8b;
+}
+
+.search-bar:focus {
+    border-color: #C2101E;
+    box-shadow: 0 0 2px 0 #C2101E;
+}
+
+.selected {
+    color: #FF3956 !important;
+    border-bottom: 1px #FF3956 solid;
+}
+
+.selected:hover {
+    background-color: #d4d4d4;
+}
+
+.custom-dropdown {
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 #e7e7e7;
+    color: #777;
+}
+
+.custom-dropdown .dropdown-item:focus, .dropdown-item:hover {
+    background-color: #FFE7E4 !important;
+    border-bottom: 0 !important;
+}
+
+.btn-icon {
+    padding: 5px 10px 4px;
+    color: #777;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    border-radius: 2px;
+    margin: 0 15px;
+    font-size: 12px;
+}
+
+.navbar-nav li:last-of-type {
+    margin-top: 8px
+}
+
+.btn-icon:hover {
+    color: black;
+    background-color: #bfbfbf;
+}
+
+.sliderr.col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.slider {
+    background-color: #F7F8F3;
+    height: 400px;
+    padding-top: 25px;
+}
+
+.carousel-item img {
+    height: 375px;
+}
+
+.product-details {
+    border: 1px solid #DDDDDB;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.product-details .product-category {
+    border: 1px solid #DDDDDB;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #F7F8F3;
+}
+
+.custom-product {
+    color: #F8AD47;
+    border-color: #F8AD47;
+    background-color: transparent;
+    padding: 9px 25px;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.sale {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: lightblue;
+    transform: rotate(-25deg);
+    display: flex;
+    font-size: 130%;
+    padding: 35px;
+    line-height: 90%;
+    flex-direction: column;
+    color: white;
+}
+
+.sale span {
+    font-size: 14px;
+}
+
+.carousel-inner .carousel-item h1 {
+    width: auto;
+    margin-top: 15px;
+    font-weight: 1000;
+    font-size: 30px;
+    color: black;
+    display: flex;
+}
+
+.custom-indicators {
+    top: 235px;
+    right: 41%;
+}
+
+.custom-indicators img {
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    border: 2px solid #DDDDDB;
+    margin-right: 2px;
+}
+
+.custom-indicators img.active {
+    border-color: #F8AD47;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+    color: #868686;
+    font-size: 20px;
+}
+
+@media (min-width: 1500px) {
+    .custom-indicators {
+        right: 29%;
+    }
 }
