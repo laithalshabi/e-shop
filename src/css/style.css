@@ -219,3 +219,130 @@ h1 {
         right: 29%;
     }
 }
+
+.store-features {
+    box-shadow: 0 0 15px #EEF0EA;
+    position: relative;
+    top: -30px;
+    background-image: url(../imgs/bg_features.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    padding-bottom: 35px;
+    padding-top: 25px;
+    background-size: auto 60%;
+    background-position: -10px -20px;
+}
+
+.store-features>img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.store-features .feature.feature {
+    border-right: 1px solid #EEF0EA;
+}
+
+.store-features .features-text {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.carousel-most-sold img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.carousel-most-sold .custom-card {
+    padding: 8px;
+    border: 2px solid #EEF0EA;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.carousel-most-sold .custom-card:hover {
+    border-color: #53CCD7;
+}
+
+.carousel-most-sold h4 {
+    font-size: 18px;
+    padding-top: 10px;
+    float: right;
+}
+
+.carousel-most-sold .card-body {
+    padding: 9px;
+}
+
+.carousel-most-sold .custom-card .price {
+    padding-top: 10px;
+    float: left;
+}
+
+.price {
+    color: #53CCD7;
+}
+
+.rating {
+    color: #C2C2C2;
+}
+
+.rating .active {
+    color: #f3af41;
+}
+
+.carousel-most-sold .overlay {
+    position: absolute;
+    background-color: rgba(83, 214, 215, .5);
+    height: 15vw;
+    width: calc(100% - 16px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.carousel-most-sold .overlay .add-card-btn {
+    background-color: white;
+    color: #19becd;
+    font-weight: bold;
+    border-color: #C2C2C2;
+}
+
+.carousel-most-sold .overlay .add-card-btn:hover, .carousel-most-sold .overlay .add-card-btn:active, .carousel-most-sold .overlay .add-card-btn:focus, .carousel-most-sold .overlay .add-card-btn:active:focus, .carousel-most-sold .overlay .add-card-btn:active:hover {
+    color: black;
+}
+
+.carousel-most-sold .sale-tag {
+    padding: 5px 10px;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    background-color: lightblue;
+    direction: ltr;
+}
+
+.carousel-most-sold .sale-tag:before {
+    content: "-";
+}
+
+.custom-indicators li {
+    height: 13px;
+    width: 13px;
+    margin: 2px;
+    background-color: #DBDBDB;
+    top: 150px;
+}
+
+.carousel-most-sold .carousel-indicators {
+    position: static;
+}
+
+.custom-indicators li.active {
+    background-color: #565656;
+}
