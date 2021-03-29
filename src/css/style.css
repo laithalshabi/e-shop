@@ -49,7 +49,7 @@ h1 {
     border: 1px solid #9b8b8b;
 }
 
-.search-btn:hover, .search-btn:focus, .search-btn:active, .search-btn:active:focus, .search-btn:active:hover {
+.custom-navbar .search-btn:hover, .search-btn:focus, .search-btn:active, .search-btn:active:focus, .search-btn:active:hover {
     color: goldenrod !important;
     background-color: #d4d4d4 !important;
     border-color: #9b8b8b !important;
@@ -345,4 +345,66 @@ h1 {
 
 .custom-indicators li.active {
     background-color: #565656;
+}
+
+.custom-panel {
+    border: 4px solid #EEF0EA;
+    border-radius: 2px;
+    box-shadow: none;
+    padding: 20px;
+}
+
+.custom-panel .product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.custom-btn {
+    color: #F8AD47;
+    border-color: #F8AD47;
+    background-color: transparent;
+}
+
+.custom-btn:hover, .custom-btn:active, .custom-btn:focus, .custom-btn:active:focus, .custom-btn:active:hover {
+    color: #b86d07;
+    border-color: #b86d07;
+    background-color: transparent;
+}
+
+.custom-panel h4, .custom-panel .price {
+    font-size: 130%;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.custom-text {
+    color: #A9A9A9;
+}
+
+.custom-arrow {
+    background-color: white;
+    color: #868686;
+    border: 1px solid #EBEBEB;
+    box-shadow: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.brand-product {
+    margin-bottom: 20px;
+}
+
+.brand-text {
+    display: inline-block;
+}
+
+.brand-product .brand-nav {
+    margin-top: 14px;
+}
+
+h3.custom-heading {
+    border-top: 1px solid #EEF0EA;
+    padding-top: 25px;
 }
