@@ -715,6 +715,148 @@ input[type=email] {
 }
 
 /******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+/******************************
+******** card page *********
+*******************************/
+
+h1.custom-heading {
+    font-size: 36px;
+    margin: 25px 0;
+}
+
+.custom-table .custom-media img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #EBEBEB;
+    margin-left: 10px;
+}
+
+.custom-table .custom-media h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.custom-table .quantity {
+    width: 56px;
+    height: 34px !important;
+    padding: 0 8px;
+    margin: auto;
+}
+
+.custom-table th, .custom-table td {
+    padding: 15px;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    font-size: 120%;
+}
+
+.custom-table th:first-child, .custom-table td:first-child {
+    width: 50%;
+}
+
+.custom-table th {
+    color: #C2C2C2;
+    font-weight: normal;
+}
+
+.custom-btn-danger {
+    color: #FF5A5F;
+    border-color: #FF5A5F;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.custom-btn-danger:hover, .custom-btn-danger:active, .custom-btn-danger:focus, .custom-btn-danger:active:focus, .custom-btn-danger:active:hover {
+    color: #C2101E;
+    border-color: #C2101E;
+    background-color: transparent;
+}
+
+.custom-table .custom-media {
+    margin: 0 15px 15px 15px;
+}
+
+.custom-table th:first-child {
+    padding-right: 20px;
+}
+
+.custom-table tfoot td {
+    border-bottom: none;
+    font-size: 150%;
+}
+
+.custom-table .total-price * {
+    color: black;
+}
+
+.custom-table .total-price .text-muted .text-muted {
+    color: #A9A9A9;
+}
+
+/******************************
 ******** media que *********
 *******************************/
 
@@ -897,6 +1039,9 @@ input[type=email] {
     }
     .newsletter form .input-group {
         width: 100%;
+    }
+    .hide-on-small {
+        display: none;
     }
 }
 

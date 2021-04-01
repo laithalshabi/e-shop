@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/html" src="{require('index.js')}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر عربي | عربة المشتريات</title>
+</head>
+
+<body>
+    <div class=" container-fluid">
+
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="top">
+                        <button class="navbar-toggler float-left btn-icon" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars fa-lg"></i>
+                        </button>
+                        <a href="card.html" class="btn btn-icon float-left d-lg-none" id="btn-shoppingcart"
+                            title="عربة الشراء" data-toggle="tooltip" data-placement="bottom">
+                            <i class="fas fa-shopping-cart fa-1x"></i>
+                        </a>
+                        <a href="." class="navbar-brand">
+                            <img src="imgs/logo.png" alt="متجر عربي">
+                        </a>
+
+                    </div>
+                    <form class="form-inline">
+                        <input type="search" class="form-control search-bar" placeholder="ابحث ....">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle search-btn" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                اختر فئة
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right custom-dropdown"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">رجالي</a>
+                                <a class="dropdown-item" href="#">نسائي</a>
+                                <a class="dropdown-item" href="#">اطفال</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn submit-search-btn ">
+                            بحث
+                        </button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a href="." class="nav-link">الصفحة الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">اقسام المتجر</a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="" class="dropdown-item">رجالي</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item">نسائي</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item">اطفال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">تواصل معنا</a>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <a href="card.html" class="btn btn-icon" id="btn-shoppingcart" title="عربة الشراء"
+                                    data-toggle="tooltip" data-placement="bottom">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div id="footer" class="row">
+            <div id="brand-logo" class="col-12 text-center">
+                <span>المتجر وكيل معتمد لكبرى الشركات العالمية</span>
+                <div class="img-container">
+                    <img src="imgs/lacoste.png" alt="">
+                    <img src="imgs/adidas.png" alt="">
+                    <img src="imgs/puma.png" alt="">
+                    <img src="imgs/polo.png" alt="">
+                </div>
+
+            </div>
+            <div id="footer-nav" class="col-12 text-center">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="imgs/logo_footer.png" alt="">
+                    </a>
+                </div>
+                <div id="footer-nav-links" class="col-12 d-none d-md-block">
+                    <a href=".">الرئيسية</a>
+                    <a href="search.html">البحث المتقدم</a>
+                    <a href="contact.html">تواصل معنا</a>
+                </div>
+                <div class="newsletter col-md-6 offset-md-3">
+                    <form>
+                        <label for="footer-email">
+                            تابع النشرة البريدية لأحدث العروض
+                        </label>
+                        <br>
+                        <div class="input-group">
+                            <input type="email" class="form-control custom-form" placeholder="البريد الاكتروني"
+                                name="email" required>
+                            <button type="submit" class="btn search-btn custom-btn2">متابعة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright-social col-12 d-block text-center ">
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="copyright float-lg-right">
+
+                        </div>
+                        <div class="social-icons float-lg-left">
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-lg"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-lg"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram-square fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
