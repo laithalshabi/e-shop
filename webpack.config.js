@@ -26,7 +26,7 @@ module.exports = {
             }]
         },
         {
-            test: /\.css$/,
+            test: /\.(sa|sc|c)ss$/,
             use: [
                 // 'style-loader',
                 {
@@ -35,7 +35,8 @@ module.exports = {
                         publicPath: '../',
                     },
                 },
-                'css-loader'
+                'css-loader',
+                "sass-loader",
             ]
         },
         {
@@ -80,12 +81,20 @@ module.exports = {
             template: "./src/product.html"
         }),
         new HtmlWebPackPlugin({
+            filename: "search.html",
+            template: "./src/search.html"
+        }),
+        new HtmlWebPackPlugin({
             filename: "card.html",
             template: "./src/card.html"
         }),
         new HtmlWebPackPlugin({
-            filename: "checkout.html",
-            template: "./src/checkout.html"
+            filename: "payment.html",
+            template: "./src/payment.html"
+        }),
+        new HtmlWebPackPlugin({
+            filename: "contact.html",
+            template: "./src/contact.html"
         }),
         new MiniCssExtractPlugin({
             filename: "css/style.css"

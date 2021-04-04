@@ -1,0 +1,82 @@
+@import './colors';
+.custom-navbar .search-btn:hover, .search-btn:focus, .search-btn:active, .search-btn:active:focus, .search-btn:active:hover {
+    color: goldenrod !important;
+    background-color: #d4d4d4 !important;
+    border-color: #9b8b8b !important;
+}
+
+.submit-search-btn {
+    color: white !important;
+    background-color: $btn-sred  !important;
+    font-weight: 700;
+    border-radius: 0%;
+    padding: 5px 15px 7px 15px;
+}
+
+.submit-search-btn:hover {
+    color: white !important;
+    background-color: $btn-sred !important;
+}
+
+.btn-icon {
+    padding: 5px 10px 4px;
+    color: #777 !important;
+    border: 1px solid #ddd !important;
+    background-color: transparent;
+    border-radius: 2px;
+    margin: 0 15px;
+    font-size: 12px;
+}
+
+.btn-icon:hover {
+    color: black !important;
+    background-color: #bfbfbf !important;
+}
+
+.overlay .add-card-btn {
+    background-color: white !important;
+    color: #19becd !important;
+    font-weight: bold;
+    border-color: #C2C2C2 !important;
+}
+
+.overlay .add-card-btn:hover, .overlay .add-card-btn:active, .overlay .add-card-btn:focus, .overlay .add-card-btn:active:focus, .overlay .add-card-btn:active:hover {
+    color: black !important;
+}
+
+.custom-btn {
+    color: $btn-dgold !important;
+    border-color: $btn-dgold !important;
+    background-color: transparent;
+}
+
+.custom-btn:hover, .custom-btn:active, .custom-btn:focus, .custom-btn:active:focus, .custom-btn:active:hover {
+    color: $btn-lorg !important;
+    border-color: $btn-lorg !important;
+    background-color: transparent;
+}
+
+.custom-btn2 {
+    color: black;
+    background-color: $btn-dgold !important;
+    border-color: $btn-dgold !important;
+}
+
+.custom-btn2:hover, .custom-btn2:active, .custom-btn2:focus, .custom-btn2:active:hover, .custom-btn2:active:focus {
+    background-color: $btn-lorg !important;
+    border-color: $btn-lorg !important;
+    color: black  !important;
+}
+
+.custom-btn-danger {
+    color: $btn-lred !important;
+    border-color: $btn-lred !important;
+    background-color: transparent  !important;
+    border-radius: 3px;
+}
+
+.custom-btn-danger:hover, .custom-btn-danger:active, .custom-btn-danger:focus, .custom-btn-danger:active:focus, .custom-btn-danger:active:hover {
+    color: $btn-red !important;
+    border-color: $btn-red !important;
+    background-color: transparent  !important; 
+}
